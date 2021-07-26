@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main Page */
+
+.nav-pills {
+    background-color: #d7e58d;
+}
+
+
+.logo {
+    width: 100px;
+}
+
+.navbar {
+    font-size: x-large;
+    font-weight: bold;
+    
+    background-color: #304a4b;
+
+}
+
+._carousel {
+    width: auto;
+    height: 500px;
+    max-height: 800px;
+    margin: auto;
+    display: block;
+    background-color: #61767b;
+}
+
+.carousel-item {
+    background-color: #61767b;
+}
+
+#custom-cards {
+    background-color: #304a4b;
+    width: 100%;
+    margin: ;
+    padding: ;
+    display: block;
+    justify-items: stretch;
+}
+
+/* Main Page End */
+
+/* Recipe Page */
+.card :nth-child(- n + 4){
+    width: 500px;
+}
+
+
+
+/* Recipe Page End*/
