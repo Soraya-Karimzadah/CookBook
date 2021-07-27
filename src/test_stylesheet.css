@@ -1,11 +1,42 @@
 html {
     scroll-behavior: smooth;
+    font-size: 1rem;
 }
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.6rem;
+    }
+}
+
+body {
+    background: #61767b;
+    font: 400;
+    font-family: sans-serif;
+}
+
+.nav-pills {
+    background-color: #f8e119;
+}
+
+
 
 /* Main Page */
 
-.nav-pills {
-    background-color: #d7e58d;
+.container {
+    background-color: #61767b;
 }
 
 
@@ -35,21 +66,238 @@ html {
 }
 
 #custom-cards {
-    background-color: #304a4b;
+    background-color: #61767b;
     width: 100%;
-    margin: ;
-    padding: ;
     display: block;
     justify-items: stretch;
 }
 
-/* Main Page End */
+#fadeout {
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 25px 0 #d7e58d;
+}
 
-/* Recipe Page */
-.card :nth-child(- n + 4){
-    width: 500px;
+#fadeout:hover h2,
+#fadeout:hover small {
+    color: black;
 }
 
 
 
+.card-cover:hover {
+    cursor: pointer;
+    filter: grayscale(40%)
+}
+
+.card-cover small {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.btn {
+    background-color: #fb8700;
+}
+
+.btn:hover{
+    background-color: #f8e119;
+}
+/* Main Page End */
+/* about */
+.alert {
+    font-size: xx-large;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+
+
+/* about End */
+/* Recipe Page */
+.card :nth-child(){
+    width: 500px;
+}
+
+.card {
+    background-color: #61767b;
+}
+
+.card-body {
+    background-color: #61767b;
+}
+.card-footer {
+    background-color: #d7e58d;
+}
+
+
+
+
+#shareBtn {
+    letter-spacing: 2px;
+    font-weight: 600;
+    box-shadow: none;
+    background-color: #eee;
+    color: #7d2ae8;
+    border: none
+}
+
+.modal {
+    top: 20%
+}
+
+.btn-close {
+    box-shadow: none;
+    border: none;
+    outline: none
+}
+
+.modal-body .icons {
+    margin: 15px 0px 20px 0px
+}
+
+.modal-body .icons a {
+    text-decoration: none;
+    border: 1px solid transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out
+}
+
+.modal-body .icons a:nth-child(1) {
+    color: #1877F2;
+    border-color: #B7D4FB
+}
+
+.modal-body .icons a:nth-child(1):hover {
+    background-color: #1877F2;
+    color: #fff
+}
+
+.modal-body .icons a:nth-child(2) {
+    color: #46C1F6;
+    border-color: #b6e7fc
+}
+
+.modal-body .icons a:nth-child(2):hover {
+    background-color: #46C1F6;
+    color: #fff
+}
+
+.modal-body .icons a:nth-child(3) {
+    color: #e1306c;
+    border-color: #f5bccf
+}
+
+.modal-body .icons a:nth-child(3):hover {
+    background-color: #e1306c;
+    color: #fff
+}
+
+.modal-body .icons a:nth-child(4) {
+    color: #25d366;
+    border-color: #bef4d2
+}
+
+.modal-body .icons a:nth-child(4):hover {
+    background-color: #25d366;
+    color: #fff
+}
+
+.modal-body .icons a:nth-child(5) {
+    color: #0088cc;
+    border-color: #b3e6ff
+}
+
+.modal-body .icons a:nth-child(5):hover {
+    background-color: #0088cc;
+    color: #fff
+}
+
+.modal-body .icons a:hover {
+    border-color: transparent
+}
+
+.modal-body .icons a span {
+    transition: all 0.09s ease-in-out
+}
+
+.modal-body .icons a:hover span {
+    transform: scaleX(1.1)
+}
+
+.modal-body .field {
+    margin: 15px 0px -5px 0px;
+    height: 45px;
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    padding: 0 5px
+}
+
+.modal-body .field.active {
+    border-color: #7d2ae8
+}
+
+.field span {
+    width: 50px;
+    font-size: 1.1rem
+}
+
+.field.active span {
+    color: #7d2ae8
+}
+
+.field input {
+    border: none;
+    outline: none;
+    font-size: 0.89rem;
+    width: 100%;
+    height: 100%
+}
+
+.field button {
+    padding: 5px 16px;
+    color: #fff;
+    background: #7d2ae8;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-weight: 500
+}
+
+@media (max-width: 330px) {
+    .modal-body .icons a {
+        margin-right: 15px;
+        width: 35px;
+        height: 35px
+    }
+}
 /* Recipe Page End*/
+
+/* TT*/
+
+
+/* TT End*/
+
+/* 404*/
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.error-actions {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.error-actions .btn {
+    margin-right: 10px;
+}
+
+/* 404 End*/
+
+/* footer*/
+.footer {
+    background-color: #61767b;
+}
+
+/* footer End*/
