@@ -9,60 +9,50 @@ body {
     text-align: center;
 }
 
-.wrapper {
-    width: 1170px;
-    margin: 0 auto;
-}
-
-header {
-    height: 100px;
-    background: #262626;
-    width: 100%;
-    z-index: 12;
-    position: fixed;
-}
-
-
-
-.banner-area {
-    width: 100%;
-    height: 500px;
-    position: fixed;
-    top: 100px;
-    background-image: url(../images/d.jpg);
-    -webkit-backface-size: cover;
+.bg-image {
+    text-shadow: 1px 1px #61767b;
+    background-image: url('../images/yes.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height:100%;
 }
 
-.banner-area h2 {
-    padding-top: 8%;
-    font-size: 50px;
-    font-family: poppins;
-    text-transform: uppercase;
-    color: #fff;
+.how-section1 {
+    margin-top: -15%;
+    padding: 10%;
 }
 
-.content-area {
-    width: 100%;
-    position: relative;
-    top: 450px;
-    background: #ddd;
-    height: 1500px;
-}
-
-.content-area h2 {
-    font-family: bignoodletitling;
-    letter-spacing: 4px;
-    padding-top: 30px;
-    font-size: 40px;
-}
-
-.content-area p {
-    padding: 2% 0;
-    font-family: merienda;
+.how-section1 h4 {
+    color: #ffa500;
+    text-shadow: 1px 1px #304a4b;
+    font-weight: bold;
     font-size: 30px;
-    line-height: 30px;
-    text-align: justify;
-    text-justify: inter-word;
 }
+
+.how-section1 .subheading {
+    color: #fb8700;
+    text-shadow: 1px 1px #304a4b;
+    font-size: 20px;
+}
+
+.how-section1 p {
+    text-shadow: 1px 1px;
+}
+
+.how-section1 .row {
+    margin-top: 10%;
+}
+
+.how-img {
+    text-align: center;
+}
+
+.how-img img {
+    width: 40%;
+}
+
