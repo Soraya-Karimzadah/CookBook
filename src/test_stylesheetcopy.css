@@ -29,19 +29,20 @@ body {
 
 .how-section1 h4 {
     color: #ffa500;
-    text-shadow: 1px 1px #304a4b;
+    text-shadow: 1px 1px #6cabad;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .how-section1 .subheading {
     color: #fb8700;
     text-shadow: 1px 1px #304a4b;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .how-section1 p {
     text-shadow: 1px 1px;
+    font-size: 30px;
 }
 
 .how-section1 .row {
@@ -53,6 +54,6 @@ body {
 }
 
 .how-img img {
-    width: 40%;
+    width: 65%;
 }
 

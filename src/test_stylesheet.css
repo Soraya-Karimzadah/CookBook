@@ -27,8 +27,19 @@ body {
     font-family: sans-serif;
 }
 
+div {
+    text-align: center;
+}
+
+p,
+h1 {text-align: center;}
+
+
+
 .nav-pills {
     background-color: #f8e119;
+    border-radius: 25px;
+    padding: 32px;
 }
 
 
@@ -42,14 +53,17 @@ body {
 
 .logo {
     width: 100px;
+    border-radius: 25px;
 }
 
 .navbar {
     font-size: x-large;
     font-weight: bold;
-    
     background-color: #304a4b;
+}
 
+.navbar-nav {
+    justify-content: space-evenly;
 }
 
 ._carousel {
@@ -69,7 +83,7 @@ body {
     background-color: #61767b;
     width: 100%;
     display: block;
-    justify-items: stretch;
+    justify-items: stretch;    
 }
 
 #fadeout {
@@ -125,7 +139,7 @@ body {
     background-color: #61767b;
 }
 .card-footer {
-    background-color: #d7e58d;
+    background-color: #f8e119;
 }
 
 
@@ -135,9 +149,9 @@ body {
     letter-spacing: 2px;
     font-weight: 600;
     box-shadow: none;
-    background-color: #eee;
-    color: #7d2ae8;
-    border: none
+    background-color: #fb8700;
+    color: #304a4b;
+    border: none;
 }
 
 .modal {
@@ -270,6 +284,11 @@ body {
         width: 35px;
         height: 35px
     }
+}
+
+img,
+iframe {
+    border-radius: 25px;
 }
 /* Recipe Page End*/
 
